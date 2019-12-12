@@ -18,9 +18,5 @@ spec:
       containers:
       - name: results
         image: docker/example-voting-app-result
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 80

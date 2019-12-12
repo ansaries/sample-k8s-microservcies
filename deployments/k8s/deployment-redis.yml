@@ -4,6 +4,8 @@ metadata:
   name: redis
   labels:
     app: redis
+  namespace: vote
+
 spec:
   replicas: 1
   selector:
@@ -17,10 +19,6 @@ spec:
       containers:
       - name: docker-example-posgres
         image: redis:alpine
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
           - containerPort: 6379
         volumeMounts:

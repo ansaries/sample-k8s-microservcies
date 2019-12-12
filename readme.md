@@ -13,7 +13,11 @@ Docker Swarm is yet another container orchestration technology, which provides r
 ## Kubernetes
 Kubernetes on the other hand is the most comprehensive and advance tool for container orchestration. It provides comprehensive application stack management, scalling and updation tools. It also provides customised networking, storage, security and recovery.
 
-To run the stack
+To run the stack first create the name space
+```
+kubectl create namespace vote
+```
+and then run
 ```
 kubectl create -f k8s/
 ```
